@@ -44,10 +44,10 @@ public class DeleteView extends JFrame {
 		// center panel
 		jPanelCenter = new JPanel();
 		jPanelCenter.setLayout(new GridLayout(3, 2));
-		jPanelCenter.add(new JLabel(AppConstants.STUDENT_NAME));
+		jPanelCenter.add(new JLabel(AppConstants.START_SYMBOL + AppConstants.STUDENT_NAME));
 		name = new JTextField();
 		jPanelCenter.add(name);
-		jPanelCenter.add(new JLabel(AppConstants.STUDENT_SNO));
+		jPanelCenter.add(new JLabel(AppConstants.START_SYMBOL + AppConstants.STUDENT_SNO));
 		sno = new JTextField();
 		jPanelCenter.add(sno);
 		jPanelCenter.add(new JLabel("-------------------------------------------------"));

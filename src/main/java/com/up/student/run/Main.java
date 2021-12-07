@@ -24,15 +24,15 @@ public class Main {
 
 		//初始化数据库
 		//admin表
-		dbUtil.exeute("create table if not exists admin(id int primary key," +
+		dbUtil.exeute("create table if not exists admin(id int NOT NULL AUTO_INCREMENT primary key," +
 				"name varchar(32)," +
 				"username varchar(32)," +
 				"password varchar(32))");
-		dbUtil.exeute("insert into admin(id, name, username, password) values(1, 'admin', 'test', 'test')");
+		dbUtil.exeute("insert into admin(name, username, password) values('admin', 'admin', 'admin')");
 
 		//student
 		dbUtil.exeute("create table if not exists student(" +
-				"id int primary key," +
+				"id int NOT NULL AUTO_INCREMENT primary key," +
 				"sno varchar(16)," +
 				"name varchar(32)," +
 				"sex varchar(8)," +

@@ -238,13 +238,13 @@ public class MainView extends JFrame {
 	private void find() {
 		currPageNum = 0;
 		String param = condition.getText();
-		if ("".equals(param) || param == null) {
-			initJTable(MainView.jTable, null);
-			currPageNumJLabel.setText(AppConstants.MAINVIEW_FIND_JLABEL);
-			return;
-		}
+//		if ("".equals(param) || param == null) {
+//			initJTable(MainView.jTable, null);
+//			currPageNumJLabel.setText(AppConstants.MAINVIEW_FIND_JLABEL);
+//			return;
+//		}
 		String[][] result = ((StudentDAO) BaseDAO.getAbilityDAO(DAO.StudentDAO)).queryByName(param);
-		condition.setText("");
+		//condition.setText("");
 		initJTable(MainView.jTable, result);
 		currPageNumJLabel.setText(AppConstants.MAINVIEW_FIND_JLABEL);
 	}

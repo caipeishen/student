@@ -12,10 +12,12 @@ package com.up.student;
  */
 public class AppConstants {
 	// jdbc
-	public static final String JDBC_URL = "jdbc:sqlite:test.db";
-	public static final String JDBC_USERNAME = "test";
-	public static final String JDBC_PASSWORD = "test";
-	public static final String JDBC_DRIVER = "org.sqlite.JDBC";
+	public static final String JDBC_URL = "jdbc:mysql://127.0.0.1:3306/student?serverTimezone=UTC";
+	public static final String JDBC_USERNAME = "root";
+	public static final String JDBC_PASSWORD = "a9530.A.";
+	public static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+
+	public static final String START_SYMBOL = "* ";
 
 	// student field
 	public static final String STUDENT_NAME = "姓名";
@@ -43,7 +45,7 @@ public class AppConstants {
 	public static final String MAINVIEW_LAST = "末页";
 	public static final String MAINVIEW_PRE = "上一页";
 	public static final String MAINVIEW_NEXT = "下一页";
-	public static final String PARAM_FIND_CONDITION = "";
+	public static final String PARAM_FIND_CONDITION = "请输入姓名";
 	public static final String PARAM_FIND = "查找";
 	public static final String PARAM_ADD = "添加";
 	public static final String PARAM_DELETE = "删除";
